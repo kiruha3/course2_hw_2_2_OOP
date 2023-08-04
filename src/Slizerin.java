@@ -1,12 +1,12 @@
 
-public class Slizeriin extends hogwarts {
+public class Slizerin extends hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
     private int resourcefulness ;
     private int authority ;
 
-    public Slizeriin(String name, String surname, int power, int transgressiya, int cunning, int determination, int ambition, int resourcefulness,int authority) {
+    public Slizerin(String name, String surname, int power, int transgressiya, int cunning, int determination, int ambition, int resourcefulness, int authority) {
         super(name, surname, power, transgressiya);
         this.cunning = cunning;
         this.determination = determination;
