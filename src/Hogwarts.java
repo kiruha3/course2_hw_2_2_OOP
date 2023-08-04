@@ -1,12 +1,12 @@
 
 
-public class hogwarts {
+public class Hogwarts {
     private String name;
     private String surname;
     private int power;
     private int transgressiya;
 
-    public hogwarts(String name, String surname, int power, int transgressiya) {
+    public Hogwarts(String name, String surname, int power, int transgressiya) {
         this.name = name;
         this.surname = surname;
         this.power = power;
@@ -15,12 +15,11 @@ public class hogwarts {
 
     @Override
     public String toString() {
-        return "hogwarts{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", power=" + power +
-                ", transgressiya=" + transgressiya +
-                '}';
+        return "Ученик hogwartsа " +
+                "Имя " + getName() +
+                " Фамилия " + getSurname() +
+                " | Сила" + getPower() +
+                " | Дальность трансгрессии " + getTransgressiya()+ "  ";
     }
 
     public String getName() {

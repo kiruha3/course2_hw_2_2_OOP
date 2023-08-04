@@ -1,4 +1,4 @@
-public class Puffenduy extends hogwarts{
+public class Puffenduy extends Hogwarts {
     private int hardworking;
     private  int loyal;
     private int honest;
@@ -11,11 +11,11 @@ public class Puffenduy extends hogwarts{
 
     @Override
     public String toString() {
-        return "Puffenduy{" +
-                "hardworking=" + hardworking +
-                ", loyal=" + loyal +
-                ", honest=" + honest +
-                "} " + super.toString();
+        return super.toString()+ "ученик Puffenduyя " +
+                " | Трудолюбие " + hardworking +
+                " | Верность " + loyal +
+                " | Честность" + honest +
+                " " ;
     }
 
     public int getHardworking() {

@@ -1,4 +1,4 @@
-public class Kogtevran extends hogwarts {
+public class Kogtevran extends Hogwarts {
     private int wise;
     private int witty;
     private int creative;
@@ -12,11 +12,11 @@ public class Kogtevran extends hogwarts {
 
     @Override
     public String toString() {
-        return "Kogtevran{" +
-                "wise=" + wise +
-                ", witty=" + witty +
-                ", creative=" + creative +
-                "} " + super.toString();
+        return super.toString()+ "ученик Kogtevranа" +
+                " | ум " + wise +
+                " | мудрость " + witty +
+                " | творчество" + creative +
+                " ";
     }
 
     public int getWise() {

@@ -1,5 +1,5 @@
 
-public class Slizerin extends hogwarts {
+public class Slizerin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
@@ -17,13 +17,13 @@ public class Slizerin extends hogwarts {
 
     @Override
     public String toString() {
-        return "Slizeriin{" +
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", resourcefulness=" + resourcefulness +
-                ", authority=" + authority +
-                "} " + super.toString();
+        return super.toString()+ "ученик Slizeriinа " +
+                " | Хитрость " + cunning +
+                " | Решительность " + determination +
+                " | Амбициозность " + ambition +
+                " | Находчивость " + resourcefulness +
+                " | Жажда власти " + authority +
+                " ";
     }
 
     public int getCunning() {
