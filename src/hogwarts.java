@@ -13,6 +13,16 @@ public class hogwarts {
         this.transgressiya = transgressiya;
     }
 
+    @Override
+    public String toString() {
+        return "hogwarts{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", power=" + power +
+                ", transgressiya=" + transgressiya +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
