@@ -18,7 +18,7 @@ public class Hogwarts {
         return "Ученик hogwartsа " +
                 "Имя " + getName() +
                 " Фамилия " + getSurname() +
-                " | Сила" + getPower() +
+                " | Сила " + getPower() +
                 " | Дальность трансгрессии " + getTransgressiya()+ "  ";
     }
 

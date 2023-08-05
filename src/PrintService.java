@@ -1,50 +1,58 @@
 import java.util.Arrays;
 
 public class PrintService {
-    public void createHogwarts(Hogwarts[] hogwarts, Griffindor[] griffindors, Kogtevran[] kogtevrans, Puffenduy[] puffenduys, Slizerin[] slizerins) {
-        int j = 0;
-        int i = 0;
-        while (i < griffindors.length) {
-            Hogwarts[] hogwart = hogwarts[j];
-            {new Hogwarts(griffindors[j].getName(), griffindors[j].getSurname(), griffindors[j].getPower(), griffindors[j].getTransgressiya())};
-            System.out.println("j = " + j);
-            hogwart[i].getName();
-            j++;i++;
-
-        }
-        j = 0;
-        while (j < kogtevrans.length) {
-            Hogwarts[] hogwart = new Hogwarts[]{new Hogwarts(kogtevrans[j].getName(), kogtevrans[j].getSurname(), kogtevrans[j].getPower(), kogtevrans[j].getTransgressiya())};
-            System.out.println("j = " + j);
-            j++;i++;
-        }
-        j = 0;
-        while (j < puffenduys.length) {
-            Hogwarts[] hogwart = new Hogwarts[]{new Hogwarts(puffenduys[j].getName(), puffenduys[j].getSurname(), puffenduys[j].getPower(), puffenduys[j].getTransgressiya())};
-            System.out.println("j = " + j);
-            j++;
-        }
-        i += j;
-        j = 0;
-        while (j < slizerins.length) {
-            Hogwarts[] hogwart = new Hogwarts[]{new Hogwarts(slizerins[j].getName(), slizerins[j].getSurname(), slizerins[j].getPower(), slizerins[j].getTransgressiya())};
-            System.out.println("j = " + j);
-            j++;i++;
-        }
-        System.out.println("i = " + i);
+    public Hogwarts[] createHogwarts(Hogwarts[] hogwarts, Griffindor[] griffindors, Kogtevran[] kogtevrans, Puffenduy[] puffenduys, Slizerin[] slizerins) {
+            int j = 0; int i = 0;
+            while (i < griffindors.length) {
+                Hogwarts hogwart = new Hogwarts(griffindors[j].getName(), griffindors[j].getSurname(), griffindors[j].getPower(), griffindors[j].getTransgressiya());
+                hogwarts[i]=hogwart;
+                j++; i++;
+            }
+            j = 0;
+            while (j < kogtevrans.length) {
+                Hogwarts hogwart = new Hogwarts(kogtevrans[j].getName(), kogtevrans[j].getSurname(), kogtevrans[j].getPower(), kogtevrans[j].getTransgressiya());
+                hogwarts[i]=hogwart;
+                j++; i++;
+            }
+            j = 0;
+            while (j < puffenduys.length) {
+                Hogwarts hogwart = new Hogwarts(puffenduys[j].getName(), puffenduys[j].getSurname(), puffenduys[j].getPower(), puffenduys[j].getTransgressiya());
+                hogwarts[i]=hogwart;
+                j++;                i++;
+            }
+            j = 0;
+            while (j < slizerins.length) {
+                Hogwarts hogwart = new Hogwarts(slizerins[j].getName(), slizerins[j].getSurname(), slizerins[j].getPower(), slizerins[j].getTransgressiya());
+                hogwarts[i]=hogwart;
+                j++;i++;
+            }
+            //System.out.println("i = " + i);
+        return hogwarts;
     }
 
-    private void pushGriffindor(Hogwarts[] hogwarts, Griffindor[] griffindors, int i, int j) {
-        Hogwarts hogwart = hogwarts[j];
-        hogwart.setName(griffindors[j].getName());
-        hogwart.setSurname(griffindors[j].getSurname());
-        hogwart.setPower(griffindors[j].getPower());
-        hogwart.setTransgressiya(griffindors[j].getTransgressiya());
-    }
+
 
     public void print(Hogwarts[] hogwarts, int i) {
         Hogwarts hogwart = hogwarts[i];
         System.out.println(hogwart.toString());
+    }
+    public int sumBallHogwarts(Hogwarts[] hogwarts, int i) {
+        Hogwarts hogwart = hogwarts[i];
+        return hogwart.getPower() + hogwart.getTransgressiya();
+    }
+    public void moreFeaturesBallHogwarts(Hogwarts[] hogwarts, int i, int j) {
+        Hogwarts hogwartsi = hogwarts[i];
+        Hogwarts hogwartsj = hogwarts[j];
+        if (sumBallHogwarts(hogwarts, i) > sumBallHogwarts(hogwarts, j)) {
+            System.out.println("Больше очков у студента " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " " + sumBall(hogwarts, i) + " ");
+        } else {
+            if (sumBall(hogwarts, i) == sumBall(hogwarts, j)) {
+                System.out.println("Равны по силе суммы доп статов Гриффиндора " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " " + sumBall(hogwarts, i) + " и "
+                        + hogwartsj.getName() + " " + hogwartsj.getSurname() + " " + sumBall(hogwarts, j) + " ");
+            } else {
+                System.out.println("Больше очков у студента " + hogwartsj.getName() + " " + hogwartsj.getSurname() + " " + sumBall(hogwarts, j));
+            }
+        }
     }
 
     public void print(Griffindor[] griffindors, int i) {
@@ -61,7 +69,7 @@ public class PrintService {
         Griffindor griffindori = griffindors[i];
         Griffindor griffindorj = griffindors[j];
         if (sumBall(griffindors, i) > sumBall(griffindors, j)) {
-            System.out.println("Больше очков у студента" + griffindori.getName() + " " + griffindori.getSurname() + " " + sumBall(griffindors, i) + " ");
+            System.out.println("Больше очков у студента " + griffindori.getName() + " " + griffindori.getSurname() + " " + sumBall(griffindors, i) + " ");
         } else {
             if (sumBall(griffindors, i) == sumBall(griffindors, j)) {
                 System.out.println("Равны по силе суммы доп статов Гриффиндора " + griffindori.getName() + " " + griffindori.getSurname() + " " + sumBall(griffindors, i) + " и "
@@ -86,7 +94,7 @@ public class PrintService {
         Kogtevran kogtevrani = kogtevrans[i];
         Kogtevran kogtevranj = kogtevrans[j];
         if (sumBall(kogtevrans, i) > sumBall(kogtevrans, j)) {
-            System.out.println("Больше очков у студента" + kogtevrani.getName() + " " + kogtevrani.getSurname() + " " + sumBall(kogtevrans, i) + " ");
+            System.out.println("Больше очков у студента " + kogtevrani.getName() + " " + kogtevrani.getSurname() + " " + sumBall(kogtevrans, i) + " ");
         } else {
             if (sumBall(kogtevrans, i) == sumBall(kogtevrans, j)) {
                 System.out.println("Равны по силе суммы доп статов Когтеварана " + kogtevrani.getName() + " " + kogtevrani.getSurname() + " " + sumBall(kogtevrans, i) + " и "
@@ -111,7 +119,7 @@ public class PrintService {
         Puffenduy puffenduyi = puffenduys[i];
         Puffenduy puffenduyj = puffenduys[j];
         if (sumBall(puffenduys, i) > sumBall(puffenduys, j)) {
-            System.out.println("Больше очков у студента" + puffenduyi.getName() + " " + puffenduyi.getSurname() + " " + sumBall(puffenduys, i));
+            System.out.println("Больше очков у студента " + puffenduyi.getName() + " " + puffenduyi.getSurname() + " " + sumBall(puffenduys, i));
         } else {
             if (sumBall(puffenduys, i) == sumBall(puffenduys, j)) {
                 System.out.println("Равны по силе суммы доп статов Пуффендуя " + puffenduyi.getName() + " " + puffenduyi.getSurname() + " " + sumBall(puffenduys, i) + " и "
@@ -136,7 +144,7 @@ public class PrintService {
         Slizerin slizerini = slizerins[i];
         Slizerin slizerinj = slizerins[j];
         if (sumBall(slizerins, i) > sumBall(slizerins, j)) {
-            System.out.println("Больше очков у студента" + slizerini.getName() + " " + slizerini.getSurname() + " " + sumBall(slizerins, i));
+            System.out.println("Больше очков у студента " + slizerini.getName() + " " + slizerini.getSurname() + " " + sumBall(slizerins, i));
         } else {
             if (sumBall(slizerins, i) == sumBall(slizerins, j)) {
                 System.out.println("Равны по силе суммы доп статов Пуффендуя " + slizerini.getName() + " " + slizerini.getSurname() + " " + sumBall(slizerins, i) + " и "
@@ -151,6 +159,7 @@ public class PrintService {
         Hogwarts hogwart = hogwarts[i];
         return hogwart.getPower() + hogwart.getTransgressiya();
     }
+
 
 
 }
