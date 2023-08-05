@@ -40,9 +40,8 @@ public class Main {
         printService.moreFeaturesBall(puffenduys, 2, 1);
         printService.moreFeaturesBall(kogtevrans, 0, 1);
         printService.moreFeaturesBall(slizerins, 2, 1);
-        System.out.println("\"сравнение 2 любых\" = " + "сравнение 2 любых");
+        System.out.println("" + "сравнение 2 любых");
         printService.moreFeaturesBallHogwarts(hogwarts,0,8 );
-        //System.out.println("griffindors[1].getName() = " + griffindors[1].getName());
 
     }
 }

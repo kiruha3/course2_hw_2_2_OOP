@@ -44,13 +44,13 @@ public class PrintService {
         Hogwarts hogwartsi = hogwarts[i];
         Hogwarts hogwartsj = hogwarts[j];
         if (sumBallHogwarts(hogwarts, i) > sumBallHogwarts(hogwarts, j)) {
-            System.out.println("Больше очков у студента " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " " + sumBall(hogwarts, i) + " ");
+            System.out.println("Больше очков у студента " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " - " + sumBall(hogwarts, i) + " ");
         } else {
             if (sumBall(hogwarts, i) == sumBall(hogwarts, j)) {
-                System.out.println("Равны по силе суммы доп статов Гриффиндора " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " " + sumBall(hogwarts, i) + " и "
-                        + hogwartsj.getName() + " " + hogwartsj.getSurname() + " " + sumBall(hogwarts, j) + " ");
+                System.out.println("Равны по очкам силы и трансгрессии Гриффиндора " + hogwartsi.getName() + " " + hogwartsi.getSurname() + " " + sumBall(hogwarts, i) + " и "
+                        + hogwartsj.getName() + " " + hogwartsj.getSurname() + " - " + sumBall(hogwarts, j) + " ");
             } else {
-                System.out.println("Больше очков у студента " + hogwartsj.getName() + " " + hogwartsj.getSurname() + " " + sumBall(hogwarts, j));
+                System.out.println("Больше очков у студента " + hogwartsj.getName() + " " + hogwartsj.getSurname() + " -" + sumBall(hogwarts, j));
             }
         }
     }
