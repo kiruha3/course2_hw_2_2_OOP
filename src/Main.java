@@ -24,13 +24,7 @@ public class Main {
                 new Slizerin("Грэхэм", "Монтегю", 1, 2, 3, 4, 5, 2, 2),
                 new Slizerin("Грегори", "Гойл", 1, 2, 3, 4, 5, 2, 2),
         };
-        Hogwarts[] hogwarts = new Hogwarts[griffindors.length + kogtevrans.length + puffenduys.length + slizerins.length];
         PrintService printService = new PrintService();
-        //printService.createHogwarts(hogwarts, griffindors, kogtevrans, puffenduys, slizerins);
-        for (int i = 0; i < griffindors.length + kogtevrans.length + puffenduys.length + slizerins.length; i++) {
-            printService.print(hogwarts, i);
-        }
-
         printService.print(griffindors, 2);
         printService.print(puffenduys, 2);
         printService.print(kogtevrans, 2);
@@ -41,7 +35,6 @@ public class Main {
         printService.moreFeaturesBall(kogtevrans, 0, 1);
         printService.moreFeaturesBall(slizerins, 2, 1);
         System.out.println("" + "сравнение 2 любых");
-        printService.moreFeaturesBallHogwarts(hogwarts,0,8 );
 
     }
 }

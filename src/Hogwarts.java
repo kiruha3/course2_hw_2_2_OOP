@@ -19,38 +19,25 @@ public abstract class Hogwarts {
                 "Имя " + getName() +
                 " Фамилия " + getSurname() +
                 " | Сила " + getPower() +
-                " | Дальность трансгрессии " + getTransgressiya()+ "  ";
+                " | Дальность трансгрессии " + getTransgressiya() + "  ";
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
 
     public int getPower() {
         return power;
     }
 
-    public void setPower(int power) {
-        this.power = power;
-    }
 
     public int getTransgressiya() {
         return transgressiya;
     }
 
-    public void setTransgressiya(int transgressiya) {
-        this.transgressiya = transgressiya;
-    }
 }

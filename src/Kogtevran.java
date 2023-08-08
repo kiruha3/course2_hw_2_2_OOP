@@ -12,7 +12,7 @@ public class Kogtevran extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString()+ "ученик Kogtevranа" +
+        return super.toString() + "ученик Kogtevranа" +
                 " | ум " + wise +
                 " | мудрость " + witty +
                 " | творчество" + creative +
@@ -31,15 +31,7 @@ public class Kogtevran extends Hogwarts {
         return witty;
     }
 
-    public void setWitty(int witty) {
-        this.witty = witty;
-    }
-
     public int getCreative() {
         return creative;
-    }
-
-    public void setCreative(int creative) {
-        this.creative = creative;
     }
 }
