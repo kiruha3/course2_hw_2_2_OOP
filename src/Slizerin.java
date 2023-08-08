@@ -16,6 +16,24 @@ public class Slizerin extends Hogwarts {
     }
 
     @Override
+    public int sumFeatures() {
+        return cunning + determination + ambition + resourcefulness + authority;
+    }
+    public void compareStudent(Slizerin student) {
+        int sumThis = sumFeatures();
+        int summStudent = student.getCunning() + student.getDetermination() + student.getAmbition()+student.getResourcefulness()+student.getAuthority();
+        if (sumThis > summStudent) {
+            System.out.println("Больше очков у студента " + this.getName() + " " + this.getSurname() + " " + sumThis + " ");
+        } else {
+            if (sumThis == summStudent) {
+                System.out.println("Равны по силе суммы доп статов Гриффиндора " + this.getName() + " " + this.getSurname() + " " + sumThis + " и "
+                        + student.getName() + " " + student.getSurname() + " " + summStudent + " ");
+            } else {
+                System.out.println("Больше очков у студента " + student.getName() + " " + student.getSurname() + " " + summStudent + " ");
+            }
+        }
+    }
+    @Override
     public String toString() {
         return super.toString() + "ученик Slizeriinа " +
                 " | Хитрость " + cunning +

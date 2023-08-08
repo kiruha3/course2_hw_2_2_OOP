@@ -11,6 +11,24 @@ public class Kogtevran extends Hogwarts {
     }
 
     @Override
+    public int sumFeatures() {
+        return wise + witty + creative;
+    }
+    public void compareStudent(Kogtevran student) {
+        int sumThis = sumFeatures();
+        int summStudent = student.getWise() + student.getWitty() + student.getCreative();
+        if (sumThis > summStudent) {
+            System.out.println("Больше очков у студента " + this.getName() + " " + this.getSurname() + " " + sumThis + " ");
+        } else {
+            if (sumThis == summStudent) {
+                System.out.println("Равны по силе суммы доп статов Гриффиндора " + this.getName() + " " + this.getSurname() + " " + sumThis + " и "
+                        + student.getName() + " " + student.getSurname() + " " + summStudent + " ");
+            } else {
+                System.out.println("Больше очков у студента " + student.getName() + " " + student.getSurname() + " " + summStudent + " ");
+            }
+        }
+    }
+    @Override
     public String toString() {
         return super.toString() + "ученик Kogtevranа" +
                 " | ум " + wise +
@@ -21,10 +39,6 @@ public class Kogtevran extends Hogwarts {
 
     public int getWise() {
         return wise;
-    }
-
-    public void setWise(int wise) {
-        this.wise = wise;
     }
 
     public int getWitty() {

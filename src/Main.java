@@ -35,6 +35,7 @@ public class Main {
         printService.moreFeaturesBall(kogtevrans, 0, 1);
         printService.moreFeaturesBall(slizerins, 2, 1);
         System.out.println("" + "сравнение 2 любых");
+        griffindors[0].compareStudent(griffindors[2]);
 
     }
 }

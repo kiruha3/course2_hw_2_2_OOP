@@ -12,6 +12,7 @@ public abstract class Hogwarts {
         this.power = power;
         this.transgressiya = transgressiya;
     }
+    abstract public int sumFeatures();
 
     @Override
     public String toString() {

@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class PrintService {
+
     public void print(Griffindor[] griffindors, int i) {
         Griffindor griffindor = griffindors[i];
         System.out.println(griffindor.toString());
@@ -105,7 +106,6 @@ public class PrintService {
         Hogwarts hogwart = hogwarts[i];
         return hogwart.getPower() + hogwart.getTransgressiya();
     }
-
 
 
 }
