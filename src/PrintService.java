@@ -2,20 +2,16 @@ import java.util.Arrays;
 
 public class PrintService {
 
-    public void print(Griffindor[] griffindors, int i) {
-        Griffindor griffindor = griffindors[i];
+    public void print(Griffindor griffindor){
         System.out.println(griffindor.toString());
     }
-    public void print(Kogtevran[] kogtevrans, int i) {
-        Kogtevran kogtevran = kogtevrans[i];
+    public void print(Kogtevran kogtevran){
         System.out.println(kogtevran.toString());
     }
-    public void print(Puffenduy[] puffenduys, int i) {
-        Puffenduy puffenduy = puffenduys[i];
+    public void print(Puffenduy puffenduy){
         System.out.println(puffenduy.toString());
     }
-    public void print(Slizerin[] slizerins, int i) {
-        Slizerin slizerin = slizerins[i];
+    public void print(Slizerin slizerin){
         System.out.println(slizerin.toString());
     }
 

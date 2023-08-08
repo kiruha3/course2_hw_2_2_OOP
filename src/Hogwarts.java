@@ -22,7 +22,7 @@ public abstract class Hogwarts {
             System.out.println("Больше очков у студента " + this.getName() + " " + this.getSurname() + " " + sumThis + " ");
         } else {
             if (sumThis == summStudent) {
-                System.out.println("Равны по силе суммы доп статов Гриффиндора " + this.getName() + " " + this.getSurname() + " " + sumThis + " и "
+                System.out.println("Равны по силе суммы доп статов " + this.getName() + " " + this.getSurname() + " " + sumThis + " и "
                         + student.getName() + " " + student.getSurname() + " " + summStudent + " ");
             } else {
                 System.out.println("Больше очков у студента " + student.getName() + " " + student.getSurname() + " " + summStudent + " ");

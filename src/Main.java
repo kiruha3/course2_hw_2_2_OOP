@@ -25,15 +25,17 @@ public class Main {
                 new Slizerin("Грегори", "Гойл", 1, 2, 3, 4, 5, 2, 2),
         };
         PrintService printService = new PrintService();
-        printService.print(griffindors, 2);
-        printService.print(puffenduys, 2);
-        printService.print(kogtevrans, 2);
-        printService.print(slizerins, 2);
+        printService.print(griffindors[2]);
+        printService.print(puffenduys[2]);
+        printService.print(kogtevrans[2]);
+        printService.print(slizerins[2]);
         System.out.println("\"\"  " + "");
-        System.out.println("" + "сравнение 2 любых");
+
         griffindors[0].compareStudent(griffindors[2]);
         puffenduys[2].compareStudent(puffenduys[1]);
         kogtevrans[1].compareStudent(kogtevrans[2]);
+        slizerins[2].compareStudent(slizerins[1]);
+        System.out.println("" + "сравнение 2 любых");
         slizerins[2].compare(kogtevrans[1]);
 
     }
