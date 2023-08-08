@@ -26,7 +26,7 @@ public class Main {
         };
         Hogwarts[] hogwarts = new Hogwarts[griffindors.length + kogtevrans.length + puffenduys.length + slizerins.length];
         PrintService printService = new PrintService();
-        printService.createHogwarts(hogwarts, griffindors, kogtevrans, puffenduys, slizerins);
+        //printService.createHogwarts(hogwarts, griffindors, kogtevrans, puffenduys, slizerins);
         for (int i = 0; i < griffindors.length + kogtevrans.length + puffenduys.length + slizerins.length; i++) {
             printService.print(hogwarts, i);
         }

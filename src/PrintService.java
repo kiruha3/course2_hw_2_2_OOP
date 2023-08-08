@@ -1,34 +1,34 @@
 import java.util.Arrays;
 
 public class PrintService {
-    public Hogwarts[] createHogwarts(Hogwarts[] hogwarts, Griffindor[] griffindors, Kogtevran[] kogtevrans, Puffenduy[] puffenduys, Slizerin[] slizerins) {
-            int j = 0; int i = 0;
-            while (i < griffindors.length) {
-                Hogwarts hogwart = new Hogwarts(griffindors[j].getName(), griffindors[j].getSurname(), griffindors[j].getPower(), griffindors[j].getTransgressiya());
-                hogwarts[i]=hogwart;
-                j++; i++;
-            }
-            j = 0;
-            while (j < kogtevrans.length) {
-                Hogwarts hogwart = new Hogwarts(kogtevrans[j].getName(), kogtevrans[j].getSurname(), kogtevrans[j].getPower(), kogtevrans[j].getTransgressiya());
-                hogwarts[i]=hogwart;
-                j++; i++;
-            }
-            j = 0;
-            while (j < puffenduys.length) {
-                Hogwarts hogwart = new Hogwarts(puffenduys[j].getName(), puffenduys[j].getSurname(), puffenduys[j].getPower(), puffenduys[j].getTransgressiya());
-                hogwarts[i]=hogwart;
-                j++;                i++;
-            }
-            j = 0;
-            while (j < slizerins.length) {
-                Hogwarts hogwart = new Hogwarts(slizerins[j].getName(), slizerins[j].getSurname(), slizerins[j].getPower(), slizerins[j].getTransgressiya());
-                hogwarts[i]=hogwart;
-                j++;i++;
-            }
-            //System.out.println("i = " + i);
-        return hogwarts;
-    }
+//    public Hogwarts[] createHogwarts(Hogwarts[] hogwarts, Griffindor[] griffindors, Kogtevran[] kogtevrans, Puffenduy[] puffenduys, Slizerin[] slizerins) {
+//            int j = 0; int i = 0;
+//            while (i < griffindors.length) {
+//                Hogwarts hogwart = new Hogwarts(griffindors[j].getName(), griffindors[j].getSurname(), griffindors[j].getPower(), griffindors[j].getTransgressiya());
+//                hogwarts[i]=hogwart;
+//                j++; i++;
+//            }
+//            j = 0;
+//            while (j < kogtevrans.length) {
+//                Hogwarts hogwart = new Hogwarts(kogtevrans[j].getName(), kogtevrans[j].getSurname(), kogtevrans[j].getPower(), kogtevrans[j].getTransgressiya());
+//                hogwarts[i]=hogwart;
+//                j++; i++;
+//            }
+//            j = 0;
+//            while (j < puffenduys.length) {
+//                Hogwarts hogwart = new Hogwarts(puffenduys[j].getName(), puffenduys[j].getSurname(), puffenduys[j].getPower(), puffenduys[j].getTransgressiya());
+//                hogwarts[i]=hogwart;
+//                j++;                i++;
+//            }
+//            j = 0;
+//            while (j < slizerins.length) {
+//                Hogwarts hogwart = new Hogwarts(slizerins[j].getName(), slizerins[j].getSurname(), slizerins[j].getPower(), slizerins[j].getTransgressiya());
+//                hogwarts[i]=hogwart;
+//                j++;i++;
+//            }
+//            //System.out.println("i = " + i);
+//        return hogwarts;
+//    }
 
 
 
