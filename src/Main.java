@@ -30,12 +30,11 @@ public class Main {
         printService.print(kogtevrans, 2);
         printService.print(slizerins, 2);
         System.out.println("\"\"  " + "");
-        printService.moreFeaturesBall(griffindors, 2, 0);
-        printService.moreFeaturesBall(puffenduys, 2, 1);
-        printService.moreFeaturesBall(kogtevrans, 0, 1);
-        printService.moreFeaturesBall(slizerins, 2, 1);
         System.out.println("" + "сравнение 2 любых");
         griffindors[0].compareStudent(griffindors[2]);
+        puffenduys[2].compareStudent(puffenduys[1]);
+        kogtevrans[1].compareStudent(kogtevrans[2]);
+        slizerins[2].compare(kogtevrans[1]);
 
     }
 }
