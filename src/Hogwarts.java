@@ -44,9 +44,6 @@ public abstract class Hogwarts {
             }
         }
     }
-
-    ;
-
     public void compare(Hogwarts hogwarts) {
         if (this.getClass().equals(hogwarts.getClass())) {
             compareOtherFacultetStudent(hogwarts);

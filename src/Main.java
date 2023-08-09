@@ -20,9 +20,9 @@ public class Main {
                 new Puffenduy("Джастин", "Финч-Флетчи", 1, 2, 3, 4, 5),
         };
         Slizerin[] slizerins = {
-                new Slizerin("Драко", "Малфой", 1, 2, 3, 4, 5, 2, 2),
-                new Slizerin("Грэхэм", "Монтегю", 1, 2, 3, 4, 5, 2, 2),
-                new Slizerin("Грегори", "Гойл", 1, 2, 3, 4, 5, 2, 2),
+                new Slizerin("Драко", "Малфой", 13, 2, 3, 4, 5, 2, 2),
+                new Slizerin("Грэхэм", "Монтегю", 21, 2, 3, 4, 58, 2, 2),
+                new Slizerin("Грегори", "Гойл", 11, 2, 3, 45, 5, 2, 2),
         };
         PrintService printService = new PrintService();
         printService.print(griffindors[2]);
@@ -36,7 +36,9 @@ public class Main {
         kogtevrans[1].compareStudent(kogtevrans[2]);
         slizerins[2].compareStudent(slizerins[1]);
         System.out.println("" + "сравнение 2 любых");
-        slizerins[2].compare(kogtevrans[1]);
+        slizerins[2].compare(slizerins[0]);
+        slizerins[2].compare(griffindors[0]);
+        //slizerins[2].compareOtherFacultetStudent(griffindors[0]);
 
     }
 }
